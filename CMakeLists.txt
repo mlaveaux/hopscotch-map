@@ -7,7 +7,7 @@ add_library(tsl_hopscotch_map INTERFACE)
 add_library(tsl::hopscotch_map ALIAS tsl_hopscotch_map)
 
 target_include_directories(tsl_hopscotch_map INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/include")
-target_compile_features(tsl_hopscotch_map INTERFACE cxx_std_11)
+target_compile_features(tsl_hopscotch_map INTERFACE cxx_auto_type cxx_constexpr cxx_nullptr)
 target_sources(tsl_hopscotch_map INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/include/tsl/bhopscotch_map.h"
                                            "${CMAKE_CURRENT_SOURCE_DIR}/include/tsl/bhopscotch_set.h"
                                            "${CMAKE_CURRENT_SOURCE_DIR}/include/tsl/hopscotch_growth_policy.h"
